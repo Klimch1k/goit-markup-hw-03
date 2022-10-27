@@ -12,6 +12,15 @@ body {
   color: var(--main-color);
   background-color: var(--main-back-color);
 }
+/* Контейнер */
+.conteiner {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid salmon;
+}
 /* Скидування дефолтних стилів */
 .link {
   text-decoration: none;
@@ -19,9 +28,14 @@ body {
 .list {
   list-style: none;
 }
+
 /* Хедер */
 .site-start {
   background: #ffffff;
+}
+.main-head {
+  display: flex;
+  align-items: center;
 }
 /* Лого */
 .logo {
@@ -42,27 +56,55 @@ body {
   color: #ffffff;
 }
 /* Навігація сайту */
-
 .site-nav {
+  display: flex;
+}
+
+.item {
+  outline: 2px solid tomato;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14x;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
-.site-nav:hover,
-.site-nav:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #2196f3;
 }
+/* Телефон та мейл */
 .auth-nav {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.auth-nav .auth-item:not(:first-child) {
+  margin-left: 50px;
+}
+.auth-item {
+  outline: 2px solid tomato;
+}
+.auth-link {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.auth-nav:hover,
-.auth-nav:focus {
+.auth-link:hover,
+.auth-link:focus {
   color: var(--accent-color);
 }
 /* Блок Хиро */
