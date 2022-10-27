@@ -1,0 +1,202 @@
+:root {
+  --main-color: #757575;
+  --title-color: #212121;
+  --main-back-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-back-color: #2f303a;
+}
+
+/* Глобальні стилі для баді */
+body {
+  font-family: "Roboto", "Athelas", "Arial", sans-serif;
+  color: var(--main-color);
+  background-color: var(--main-back-color);
+}
+/* Скидування дефолтних стилів */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/* Хедер */
+.site-start {
+  background: #ffffff;
+}
+/* Лого */
+.logo {
+  font-family: "Raleway", "Roboto", "Athelas", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio-start {
+  color: #000000;
+}
+.logo-studio-end {
+  color: #ffffff;
+}
+/* Навігація сайту */
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.site-nav:hover,
+.site-nav:focus {
+  color: #2196f3;
+}
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.auth-nav:hover,
+.auth-nav:focus {
+  color: var(--accent-color);
+}
+/* Блок Хиро */
+.hero {
+  background-color: var(--second-back-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  font-family: "Roboto", "Athelas", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  cursor: pointer;
+}
+/* Список ефективних рішеня для вашого бізнесу */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.decisions-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.decisions-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* Список послуг  */
+.servises {
+  background: var(--main-back-color);
+}
+.servises-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+.team-person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+.site-end {
+  background: var(--second-back-color);
+}
+
+.location {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
+}
+/* СТИЛІЗАЦІЯ ПОРТФОЛІО */
+/* Кнопки портфоліо */
+.portfolio {
+  background-color: var(--main-back-color);
+}
+.portfolio-button {
+  font-family: "Roboto", "Athelas", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  cursor: pointer;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/* Список робіт */
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
