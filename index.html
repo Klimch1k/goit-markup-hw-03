@@ -23,10 +23,12 @@
     <header class="site-start">
       <div class="conteiner main-head">
         <!-- Логотип -->
-        <a class="logo link" href="/">
-          <span class="logo-web">Web</span
-          ><span class="logo-studio-start">Studio</span>
-        </a>
+        <div class="position-logo">
+          <a class="logo link" href="/">
+            <span class="logo-web">Web</span
+            ><span class="logo-studio-start">Studio</span>
+          </a>
+        </div>
         <!-- Навігація -->
         <nav>
           <ul class="site-nav list">
@@ -64,44 +66,51 @@
     <main>
       <!-- Блок хиро -->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <div class="conteiner">
+          <h1 class="hero-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- Список ефективних рішень для вашого бізнесу -->
-      <section class="decisions">
-        <!-- Заголовок, якого немає в макеті, але логічно його тут поставити та потім прибрати в CSS-->
-        <h2 class="visually-hidden">
-          Список ефективних рішень для вашого бізнесу
-        </h2>
-        <ul class="list">
-          <li>
-            <h3 class="decisions-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="decisions-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="decisions-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="decisions-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="decisions-title">ПЛАНУВАННЯ</h3>
-            <p class="decisions-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="decisions-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="decisions-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="conteiner">
+          <!-- Заголовок, якого немає в макеті, але логічно його тут поставити та потім прибрати в CSS-->
+          <h2 class="visually-hidden">
+            Список ефективних рішень для вашого бізнесу
+          </h2>
+          <ul class="list decisions-list">
+            <li>
+              <h3 class="decisions-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="decisions-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="decisions-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="decisions-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="decisions-title">ПЛАНУВАННЯ</h3>
+              <p class="decisions-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="decisions-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="decisions-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Список послуг -->
       <section class="servises">

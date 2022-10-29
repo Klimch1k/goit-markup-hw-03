@@ -21,12 +21,16 @@ body {
   margin-right: auto;
   outline: 2px solid salmon;
 }
-/* Скидування дефолтних стилів */
+/* Скидування дефолтних стилів та задання глобальних стилів */
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Хедер */
@@ -36,15 +40,26 @@ body {
 .main-head {
   display: flex;
   align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 /* Лого */
+.position-logo {
+  display: flex;
+}
 .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: "Raleway", "Roboto", "Athelas", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
+  background-color: tomato;
 }
 .logo-web {
   color: #2196f3;
@@ -58,6 +73,11 @@ body {
 /* Навігація сайту */
 .site-nav {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .item {
@@ -86,6 +106,7 @@ body {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: auto;
 }
 .auth-nav .auth-item:not(:first-child) {
   margin-left: 50px;
@@ -109,9 +130,14 @@ body {
 }
 /* Блок Хиро */
 .hero {
+  padding-top: 166px;
+  padding-bottom: 200px;
   background-color: var(--second-back-color);
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -122,17 +148,25 @@ body {
 }
 
 .hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+
   font-family: "Roboto", "Athelas", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Список ефективних рішеня для вашого бізнесу */
 .visually-hidden {
@@ -147,7 +181,16 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.decisions-list {
+  display: flex;
+
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .decisions-title {
+  margin-top: 0px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
