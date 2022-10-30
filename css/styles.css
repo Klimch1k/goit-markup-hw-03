@@ -19,7 +19,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid salmon;
 }
 /* Скидування дефолтних стилів та задання глобальних стилів */
 .link {
@@ -77,9 +76,6 @@ body {
   margin-bottom: 0px;
 }
 
-.item {
-  outline: 2px solid tomato;
-}
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -108,9 +104,7 @@ body {
 .auth-nav .auth-item:not(:first-child) {
   margin-left: 50px;
 }
-.auth-item {
-  outline: 2px solid tomato;
-}
+
 .auth-link {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -381,6 +375,9 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
+}
+.portfolio-picture {
+  display: block;
 }
 
 .portfolio-title {
