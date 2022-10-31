@@ -31,17 +31,21 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /* Хедер */
 .site-start {
   background: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 .main-head {
   display: flex;
   align-items: center;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
 }
 /* Лого Хедеру*/
 .position-logo-head {
@@ -94,6 +98,9 @@ body {
 .nav-link:focus {
   color: #2196f3;
 }
+.current {
+  color: var(--accent-color);
+}
 /* Телефон та мейл */
 .auth-nav {
   display: flex;
@@ -140,6 +147,7 @@ body {
 
 .hero-button {
   display: block;
+  min-width: 216px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
@@ -158,6 +166,7 @@ body {
   background: #2196f3;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-color);
 }
 /* Список ефективних рішеня для вашого бізнесу */
 .visually-hidden {
@@ -202,6 +211,10 @@ body {
   letter-spacing: 0.03em;
 }
 /* Список послуг  */
+.servises {
+  padding-top: 0px;
+}
+
 .servises-list {
   display: flex;
   padding-left: 0px;
@@ -233,6 +246,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  background-color: #ffffff;
 }
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -257,7 +271,7 @@ body {
 }
 .team-text {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.2;
@@ -274,8 +288,6 @@ body {
 /* ЛОГО ФУТЕРУ */
 .logo-end {
   display: inline-block;
-  padding-top: 21px;
-  padding-bottom: 15px;
   margin-right: auto;
 
   font-family: "Raleway", "Roboto", "Athelas", "Arial", sans-serif;
@@ -301,9 +313,6 @@ body {
 }
 
 .location {
-  padding-top: 4px;
-  padding-bottom: 4px;
-
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -316,13 +325,11 @@ body {
   color: var(--accent-color);
 }
 
-.mail-end {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
+.mail-end,
 .tel-end {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-style: normal;
 }
 
 /* СТИЛІЗАЦІЯ ПОРТФОЛІО */
@@ -352,13 +359,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: transparent;
 }
 .filter-button:focus,
 .filter-button:hover {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Список робіт */
 .portfolio-list {
@@ -371,18 +379,17 @@ body {
   padding-left: 0px;
 }
 
-.portfolio-item {
+.image-caption {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
-}
-.portfolio-picture {
-  display: block;
 }
 
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-size: 18px;
   line-height: 2;
@@ -391,7 +398,9 @@ body {
 }
 .portfolio-text {
   margin-top: 4px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-size: 16px;
   line-height: 1.8;
