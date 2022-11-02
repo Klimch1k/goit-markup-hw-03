@@ -390,6 +390,8 @@ a {
 }
 
 .image-caption {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
@@ -402,7 +404,7 @@ a {
 }
 
 .portfolio-title {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 24px;
   padding-right: 24px;
@@ -414,7 +416,7 @@ a {
 }
 .portfolio-text {
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-left: 24px;
   padding-right: 24px;
 
